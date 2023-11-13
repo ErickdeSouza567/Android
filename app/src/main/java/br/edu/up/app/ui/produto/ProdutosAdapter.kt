@@ -38,10 +38,6 @@ class ProdutosAdapter(
 
         val itemProduto = produtos[position]
 
-        //Carregamento local
-        //val idFoto = Fotos.get(itemProduto.foto)
-        //holder.imgFoto.setImageResource(idFoto)
-
         //Carregamento remoto
         holder.imgFoto.load(R.drawable.semfoto)
         Firebase.storage.getReference(itemProduto.foto)

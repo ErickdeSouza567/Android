@@ -50,3 +50,4 @@ class ProdutoFragment : Fragment() {
         return binding.root
     }
 }
+

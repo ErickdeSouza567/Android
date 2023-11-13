@@ -1,5 +1,6 @@
 package br.edu.up.app.ui.produto
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -24,6 +25,7 @@ import kotlinx.coroutines.launch
 @AndroidEntryPoint
 class ProdutosFragment : Fragment() {
 
+    @SuppressLint("UnsafeRepeatOnLifecycleDetector")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
